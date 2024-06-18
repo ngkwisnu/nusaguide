@@ -1,8 +1,8 @@
-// vite.config.js
 import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
 
 export default defineConfig({
-  build: {
-    outDir: "dist", // Set the output directory for the build
-  },
+  plugins: [
+    react(), // Memasukkan plugin react-swc ke dalam array plugins
+  ],
 });
